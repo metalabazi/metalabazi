@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal Abazi</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/e1659de1de.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-background">
+            <div class="top-bar-left-elements-item" style="color: rgb(255, 255, 255);">
+                <i class="fas fa-phone-alt"></i>
+                049118317
+                &nbsp;<i class="fas fa-location-arrow" style="color: white;"></i>
+                Mitrovicë
+            </div>
+            <div id="top-bar-right-social-media-icons">
+                <a href="#">
+                    <i class="fas fa-mail-bulk" style="color: rgb(2, 252, 252);"></i>
+                </a>
+                <a href="https://www.facebook.com/pages/category/Business-Service/Metal-Abazi-479347885410797/" >
+                <i class="fab fa-facebook-square" style="color:rgb(2, 252, 252);"></i>
+            </a>
+                <a href="https://www.instagram.com/metalabazi/">
+                    <i class="fab fa-instagram" style="color: rgb(2, 252, 252);"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <ul>
+            <li><a href="index.html" id="links2"><i class="fas fa-home"></i>Home</a></li>
+            <br>
+                <div class="dropdown" id="links"><button onclick="myFunction()" class="dropbtn"><i class="fab fa-product-hunt"></i>Produktet</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="dyer.html">Dyer</a>
+                        <a href="Rrethoja-te-oborrit.html">Rrethoja të oborrit</a>
+                        <a href="Gilindera.html">Gilindera-Parmak</a>
+                    </div>
+                </div>
+                <li><a href="Na-kontaktoni.html" id="links1"><i class="fas fa-address-book"></i>Na kontaktoni</a></li>
+            </ul>
+        <!-- <img src="./Metal-abazi logo.jpg" alt="" class="logo-of-company">
+        <h3 class="name-of-company"><i>Metal Abazi</i></h3>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+            <img src="Images/employers.jpeg" alt="" id="employers">
+            <h2>Mirë se vini ne Metal Abazi!
+                <br>
+                Tek ne gjeni modele te ndryshme qe ju i deshironi.
+            </h2> -->
+                <script>
+            function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+}
+}
+}
+}
+        const toggleButton=document.getElementsByClassName('toggle-button')[0]
+        const links=document.getElementById('links')[0]
+
+        // toggleButton.addEventListener('click', () => {
+        //     links.classList.toggle('active')
+        // })
+        </script>
+</body>
+</html>
